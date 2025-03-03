@@ -39,7 +39,7 @@ After I created a Resource Group, and created both VM's. I wanted to verify that
 <br />
 
 <p>
-![image](https://github.com/user-attachments/assets/69c0b1e6-0328-4b97-9a13-1dca6a7820a8)
+![image](https://github.com/user-attachments/assets/e2425da5-a70f-4d23-a9cd-f05f547edb5b)
 
 </p>
 <p>
