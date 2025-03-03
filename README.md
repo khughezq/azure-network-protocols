@@ -50,7 +50,7 @@ Next, I installed WireShark and from Windows 10 Vm I pinged the Linux Vm using P
 
 <p>
 <img width="900" alt="image" src="https://github.com/user-attachments/assets/23caaa61-a170-45e4-b15c-b15dd7f99033" />
-![image](https://github.com/user-attachments/assets/c47cfafd-e8b2-4bd4-b80c-ded7336c7c15)
+<img width="943" alt="image" src="https://github.com/user-attachments/assets/5cadde05-63e8-4d6a-a3ac-4108a4dbe589" />
 
 </p>
 <p>
