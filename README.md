@@ -23,8 +23,9 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 - Create Virtual Machines and ensure both VM's are in the same Virtual Network/Subnet 
 - Install Wireshark
-- Step 3
-- Step 4
+- Ping Linux Vm to observe ICMP Traffic 
+- Configuring a Firewall to deny incoming (inbound) ICMP traffic
+- 
 
 <h2>Actions and Observations</h2>
 
@@ -39,19 +40,22 @@ After I created a Resource Group, and created both VM's. I wanted to verify that
 <br />
 
 <p>
-![image](https://github.com/user-attachments/assets/e2425da5-a70f-4d23-a9cd-f05f547edb5b)
+<img width="863" alt="image" src="https://github.com/user-attachments/assets/310dcbc5-60a7-4e0d-aa1b-4ac7148865ac" />
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next, I installed WireShark and from Windows 10 Vm I pinged the Linux Vm using Powershell and the private IP address of the Ubuntu VM (Linux vm). Then I filtered the Wireshark to only observe ICMP traffic. Which will allow me to inspect it. 
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="900" alt="image" src="https://github.com/user-attachments/assets/23caaa61-a170-45e4-b15c-b15dd7f99033" />
+![image](https://github.com/user-attachments/assets/c47cfafd-e8b2-4bd4-b80c-ded7336c7c15)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Then I initiated a perpetual/non-stop ping from the Windows 10 VM to my Ubuntu VM using Powershell and the (private IP address -t). Within Azure, I Configured a Firewall in my Linux Vm [Network Security Group] to disable incoming (inbound) ICMP traffic. When I go back into WireShark you can see that request have been made, but my firewall is now blocking the traffic.
+
 </p>
 
 <p>
