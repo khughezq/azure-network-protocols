@@ -11,7 +11,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Various Command-Line Tools
-- Various Network Protocols (SSH, RDH, DNS, HTTP/S, ICMP)
+- Various Network Protocols (SSH, RDP, DNS, HTTP/S, ICMP)
 - Wireshark (Protocol Analyzer)
 
 <h2>Operating Systems Used </h2>
@@ -63,12 +63,14 @@ Then I initiated a perpetual/non-stop ping from the Windows 10 VM to my Ubuntu V
 </p>
 
 
+
 <p>
 <img width="776" alt="image" src="https://github.com/user-attachments/assets/2ae37963-2fb5-4d52-8a86-6e2ebf9c555f" />
 
 </p>
 <p>
 In order, to observe SSH traffic we have to connect our user to Linux-Vm Private IP address using Powershell. ( ssh user@private IP address )
+
 
 
 <p>
@@ -79,9 +81,11 @@ In order, to observe SSH traffic we have to connect our user to Linux-Vm Private
 In order, to observe DNS traffic we have to use Powershell. For my example, I used google.com (nslookup google.com)
 
 
+
 <p>
- ![image](https://github.com/user-attachments/assets/36fcf624-ca17-4941-b5b2-81c73fa234e4)
- 
+<img width="814" alt="image" src="https://github.com/user-attachments/assets/8ed638bd-3504-48b0-9ae1-9a2dfa8e4737" />
+
 </p>
 <p>
 Lastly, to observe RDP we type ( tcp.port == 3389 ) in WireShark to see RDP traffic. 
+
