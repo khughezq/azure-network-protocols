@@ -25,7 +25,8 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Install Wireshark
 - Ping Linux Vm to observe ICMP Traffic 
 - Configuring a Firewall to deny incoming (inbound) ICMP traffic
-- 
+- Observe SSH Traffic
+- Observe DNS Traffic
 
 <h2>Actions and Observations</h2>
 
@@ -56,18 +57,28 @@ Next, I installed WireShark and from Windows 10 Vm I pinged the Linux Vm using P
 
 </p>
 <p>
-Then I initiated a perpetual/non-stop ping from the Windows 10 VM to my Ubuntu VM using Powershell and the (private IP address -t). Within Azure, I Configured a Firewall in my Linux Vm [Network Security Group] to disable incoming (inbound) ICMP traffic. When I go back into WireShark you can see that request has been made, but my firewall is now blocking the traffic.
+Then I initiated a perpetual/non-stop ping from the Windows 10 VM to my Ubuntu VM using Powershell. Within Azure, I Configured a Firewall in my Linux Vm [Network Security Group] to disable incoming (inbound) ICMP traffic. When I go back into WireShark you can see that request has been made, but my firewall is now blocking the traffic. ( ping private IP address -t)
 
 </p>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![image](https://github.com/user-attachments/assets/8caf77b0-be10-4e73-a1c7-f7f05a092781)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In order, to observe SSH traffic we have to connect our user to Linux-Vm Private IP address using Powershell. ( ssh user@private IP address )
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![image](https://github.com/user-attachments/assets/c9af0b3c-5bd2-418d-a230-7feb1cdcb893)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In order, to observe DNS traffic we have to use Powershell. For my example, I used google.com (nslookup google.com)
+
+
+<p>
+ ![image](https://github.com/user-attachments/assets/36fcf624-ca17-4941-b5b2-81c73fa234e4)
+ 
+</p>
+<p>
+Lastly, to observe RDP we type ( tcp.port == 3389 ) in WireShark to see RDP traffic. 
