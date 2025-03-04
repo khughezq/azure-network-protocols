@@ -62,16 +62,17 @@ Then I initiated a perpetual/non-stop ping from the Windows 10 VM to my Ubuntu V
 
 </p>
 
+
 <p>
 <img width="776" alt="image" src="https://github.com/user-attachments/assets/2ae37963-2fb5-4d52-8a86-6e2ebf9c555f" />
-
 
 </p>
 <p>
 In order, to observe SSH traffic we have to connect our user to Linux-Vm Private IP address using Powershell. ( ssh user@private IP address )
 
+
 <p>
-![image](https://github.com/user-attachments/assets/c9af0b3c-5bd2-418d-a230-7feb1cdcb893)
+<img width="806" alt="image" src="https://github.com/user-attachments/assets/32aa062d-22af-4199-99df-36a48b38ac7e" />
 
 </p>
 <p>
