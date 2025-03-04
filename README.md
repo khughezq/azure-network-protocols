@@ -27,6 +27,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Configuring a Firewall to deny incoming (inbound) ICMP traffic
 - Observe SSH Traffic
 - Observe DNS Traffic
+- Observe RDP Traffic
 
 <h2>Actions and Observations</h2>
 
@@ -62,7 +63,8 @@ Then I initiated a perpetual/non-stop ping from the Windows 10 VM to my Ubuntu V
 </p>
 
 <p>
-![image](https://github.com/user-attachments/assets/8caf77b0-be10-4e73-a1c7-f7f05a092781)
+<img width="776" alt="image" src="https://github.com/user-attachments/assets/2ae37963-2fb5-4d52-8a86-6e2ebf9c555f" />
+
 
 </p>
 <p>
