@@ -37,7 +37,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 </p>
 <p>
-After I created a Resource Group, and created both VM's. I wanted to verify that both Virtual Machines are in the same Virtual Network/Subnet.
+1. After I created a Resource Group, and created both VM's. I wanted to verify that both Virtual Machines are in the same Virtual Network/Subnet.
 </p>
 <br />
 
@@ -47,7 +47,7 @@ After I created a Resource Group, and created both VM's. I wanted to verify that
 
 </p>
 <p>
-Next, I installed WireShark and from Windows 10 Vm I pinged the Linux Vm using Powershell and the private IP address of the Ubuntu VM (Linux vm). Then I filtered the Wireshark to only observe ICMP traffic. Which will allow me to inspect it. 
+2. Next, I installed WireShark and from Windows 10 Vm I pinged the Linux Vm using Powershell and the private IP address of the Ubuntu VM (Linux vm). Then I filtered the Wireshark to only observe ICMP traffic. Which will allow me to inspect it. 
 </p>
 <br />
 
@@ -58,7 +58,7 @@ Next, I installed WireShark and from Windows 10 Vm I pinged the Linux Vm using P
 
 </p>
 <p>
-Then I initiated a perpetual/non-stop ping from the Windows 10 VM to my Ubuntu VM using Powershell. Within Azure, I Configured a Firewall in my Linux Vm [Network Security Group] to disable incoming (inbound) ICMP traffic. When I go back into WireShark you can see that request has been made, but my firewall is now blocking the traffic. ( ping private IP address -t)
+3. Then I initiated a perpetual/non-stop ping from the Windows 10 VM to my Ubuntu VM using Powershell. Within Azure, I Configured a Firewall in my Linux Vm [Network Security Group] to disable incoming (inbound) ICMP traffic. When I go back into WireShark you can see that request has been made, but my firewall is now blocking the traffic. ( ping private IP address -t)
 
 </p>
 
@@ -69,7 +69,7 @@ Then I initiated a perpetual/non-stop ping from the Windows 10 VM to my Ubuntu V
 
 </p>
 <p>
-In order, to observe SSH traffic we have to connect our user to Linux-Vm Private IP address using Powershell. ( ssh user@private IP address )
+4. In order, to observe SSH traffic we have to connect our user to Linux-Vm Private IP address using Powershell. ( ssh user@private IP address )
 
 
 
@@ -78,7 +78,7 @@ In order, to observe SSH traffic we have to connect our user to Linux-Vm Private
 
 </p>
 <p>
-In order, to observe DNS traffic we have to use Powershell. For my example, I used google.com (nslookup google.com)
+5. In order, to observe DNS traffic we have to use Powershell. For my example, I used google.com (nslookup google.com)
 
 
 
@@ -87,5 +87,5 @@ In order, to observe DNS traffic we have to use Powershell. For my example, I us
 
 </p>
 <p>
-Lastly, to observe RDP we type ( tcp.port == 3389 ) in WireShark to see RDP traffic. 
+6. Lastly, to observe RDP we type ( tcp.port == 3389 ) in WireShark to see RDP traffic. 
 
