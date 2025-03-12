@@ -59,9 +59,8 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 </p>
 <p>
 3. Then I initiated a perpetual/non-stop ping from the Windows 10 VM to my Ubuntu VM using Powershell. Within Azure, I Configured a Firewall in my Linux Vm [Network Security Group] to disable incoming (inbound) ICMP traffic. When I go back into WireShark you can see that request has been made, but my firewall is now blocking the traffic. ( ping private IP address -t)
-
 </p>
-
+<br />
 
 
 <p>
@@ -70,7 +69,8 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 </p>
 <p>
 4. In order, to observe SSH traffic we have to connect our user to Linux-Vm Private IP address using Powershell. ( ssh user@private IP address )
-
+</p>
+<br />
 
 
 <p>
@@ -79,7 +79,8 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 </p>
 <p>
 5. In order, to observe DNS traffic we have to use Powershell. For my example, I used google.com (nslookup google.com)
-
+</p>
+<br />
 
 
 <p>
